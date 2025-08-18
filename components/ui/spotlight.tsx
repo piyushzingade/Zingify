@@ -3,10 +3,9 @@ import { cn } from "@/lib/utils";
 
 interface SpotlightProp {
   className?: string;
-  fill?: string;
 }
 
-export function Spotlight({ className, fill }: SpotlightProp) {
+export function Spotlight({ className }: SpotlightProp) {
   return (
     <svg
       className={cn(
@@ -24,7 +23,7 @@ export function Spotlight({ className, fill }: SpotlightProp) {
           rx="1924.71"
           ry="273.501"
           transform="matrix(-0.822377 -0.568943 -0.568943 0.822377 3631.88 2291.09)"
-          fill={fill || "white"}
+          fill={"white"}
           fillOpacity="0.21"
         />
       </g>

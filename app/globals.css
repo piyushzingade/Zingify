@@ -129,19 +129,19 @@ body {
 }
 
 /* Hide default scrollbar */
-.custom-scrollbar {
+/* .custom-scrollbar {
   overflow: hidden;
   overflow-y: scroll;
   /* Add this line to force vertical scrollbar */
-}
+/* } */ 
 
 /* Custom Scrollbar */
-.custom-scrollbar::-webkit-scrollbar {
+/* .custom-scrollbar::-webkit-scrollbar {
   width: 10px;
   height: 8px;
-}
+} */
 
-.custom-scrollbar::-webkit-scrollbar-track {
+/* .custom-scrollbar::-webkit-scrollbar-track {
   background: #101012;
 }
 
@@ -152,4 +152,4 @@ body {
 
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: #555;
-}
+} */

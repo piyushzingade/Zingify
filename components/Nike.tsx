@@ -13,9 +13,9 @@ export default function Nike() {
           "[mask-image:radial-gradient(900px_circle_at_center,white,transparent)]"
         )}
       />
-      <div className="relative max-w-7xl h-full w-full flex items-center justify-center max-sm:items-end">
+      <div className="relative max-w-7xl h-full w-full  max-sm:items-end">
         <motion.div>
-          <Spotlight className="top-[-10%] left-[-10%]" fill="white" />
+          <Spotlight className="top-[-30%] left-[-30%]"  />
         </motion.div>
 
         {/* Main Text - Left Side */}
@@ -26,7 +26,7 @@ export default function Nike() {
             transition={{ duration: 1, delay: 0 }}
             className="font-bold lg:text-[5rem] md:text-[4rem] text-4xl leading-[0.78]"
           >
-            <h2 className="bg-gradient-to-b from-zinc-200 font-mono space-x-[-8px] to-zinc-600 bg-clip-text text-transparent tracking-tighter">
+            <h2 className="bg-gradient-to-b from-zinc-200 font-mono stroke-[3] to-zinc-600 bg-clip-text text-transparent tracking-tighter">
               Nike Kobe X<br />
               All Star Edition
             </h2>
