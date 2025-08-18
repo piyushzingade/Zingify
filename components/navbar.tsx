@@ -2,7 +2,7 @@ import { Search, User, ShoppingCart } from "lucide-react";
 
 export default function Navbar() {
   return (
-    <nav className="flex justify-between items-center max-w-full px-4 py-2.5  bg-transparent backdrop-blur-sm border-b border-zinc-800/50">
+    <nav className="flex justify-between items-center overflow-hidden w-full px-4 py-2.5  bg-transparent backdrop-blur-sm border-b border-zinc-800/50">
       {/* First section - Logo and Navigation */}
       <div className="flex items-center gap-8">
         {/* Logo */}
