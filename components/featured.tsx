@@ -3,10 +3,10 @@ import ShoppingCard from "./ShoppingCard";
 
 export default function Features() {
     return (
-        <div className="min-h-screen flex flex-col mx-auto px-18 py-8">
+        <div className="min-h-screen flex flex-col mx-auto px-4 md:px-8 lg:px-18 py-4 md:py-8">
             {/* Title */}
-            <div className="flex justify-start items-center mb-8">
-                <h1 className="text-7xl font-extrabold bg-gradient-to-b from-[#e3e3e4] to-[#222325] text-transparent bg-clip-text text-shadow text-border-[#545454]">
+            <div className="flex justify-start items-center mb-4 md:mb-8">
+                <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold bg-gradient-to-b from-[#e3e3e4] to-[#222325] text-transparent bg-clip-text text-shadow text-border-[#545454]">
                     FEATURED
                 </h1>
             </div>

@@ -15,7 +15,7 @@ export default function Home() {
         <Nike />
         <Features />
         <div className="my-3 relative ">
-          <Marquee className="[--duration:190s]">
+          <Marquee className="[--duration:50s]">
             {Products.map((product) => (
               <ProductCard
                 key={product.id}
