@@ -7,15 +7,18 @@ import { motion } from "framer-motion";
 
 export default function Nike() {
   return (
-    <div className="h-[90vh] max-h-[900px] relative flex items-center justify-center group">
+    <div className="h-[90vh] max-h-[900px] relative flex items-center justify-center group selection:none">
       <DotPattern
         className={cn(
           "[mask-image:radial-gradient(900px_circle_at_center,white,transparent)]"
         )}
       />
       <div className="relative max-w-7xl h-full w-full  max-sm:items-end">
-        <motion.div>
-          <Spotlight className="top-[-30%] left-[-30%]"  />
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 3.35 }}>
+          <Spotlight className="top-[-35%] left-[-35%]" />
         </motion.div>
 
         {/* Main Text - Left Side */}
@@ -23,7 +26,7 @@ export default function Nike() {
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0 }}
+            transition={{ duration: 1, delay: 0.5 }}
             className="font-bold lg:text-[5rem] md:text-[4rem] text-4xl leading-[0.78]"
           >
             <h2 className="bg-gradient-to-b from-zinc-200 font-mono stroke-[3] to-zinc-600 bg-clip-text text-transparent tracking-tighter">
@@ -34,19 +37,19 @@ export default function Nike() {
           <motion.p
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 1 }}
-            className="text-2xl md:text-3xl font-bold font-mono bg-white text-black w-fit px-2 py-1 mt-2"
+            transition={{ duration: 0.5, delay: 0.85 }}
+            className="text-2xl md:text-3xl font-bold font-mono text-black bg-white w-fit rounded-sm px-2 py-1 mt-4"
           >
             Strike with Precision.
           </motion.p>
         </div>
 
-        {/* Image - Center Right */}
+        {/* Image -  */}
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 2.25 }}
-          className="absolute right-[-10%] top-1/2 transform -translate-y-1/2 max-sm:right-0 max-sm:top-1/2"
+          transition={{ duration: 1, delay: 1.3 }}
+          className="absolute right-[-15%] top-1/2 transform -translate-y-1/2 max-sm:right-0 max-sm:top-1/2"
         >
           <img
             src="/hero.png"
@@ -59,8 +62,8 @@ export default function Nike() {
         <motion.div
           initial={{ opacity: 0, y: -40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 1.5 }}
-          className="absolute w-1 font-bold font-mono text-white flex-col flex max-sm:flex-row max-sm:w-max max-sm:bottom-10 max-sm:left-10 items-center justify-center right-20 bottom-56 text-3xl"
+          transition={{ duration: 1, delay: 1.85 }}
+          className="absolute w-1 font-bold font-mono text-zinc-400 flex-col flex max-sm:flex-row max-sm:w-max max-sm:bottom-10 max-sm:left-10 items-center justify-center right-10 bottom-56 text-3xl"
         >
           <span>M</span>
           <span>A</span>
@@ -73,8 +76,8 @@ export default function Nike() {
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 1.75 }}
-          className="absolute w-1 font-bold font-mono flex-col max-sm:flex-row max-sm:w-max max-sm:bottom-10 flex items-center justify-center right-10 bottom-5 text-3xl"
+          transition={{ duration: 1, delay: 1.95 }}
+          className="absolute w-1 font-bold font-mono flex-col max-sm:flex-row max-sm:w-max max-sm:bottom-10 flex items-center justify-center right-0 bottom-5 text-3xl"
         >
           {["M", "E", "N", "T", "A", "L", "I", "T", "Y"].map(
             (letter, index) => (
@@ -83,7 +86,7 @@ export default function Nike() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 1.75 + index * 0.1 }}
-                className="bg-gradient-to-b from-[#fc701c] via-[#fdfe3d] to-[#5ea314] bg-clip-text text-transparent"
+                className="text-zinc-400 bg-clip-text"
               >
                 {letter}
               </motion.span>
